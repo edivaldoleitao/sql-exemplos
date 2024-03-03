@@ -124,3 +124,7 @@
 --adiciona restrição para valor de coluna preco maior que zero
 --alter table Produtos
 --add constraint CHK_ColunaPreco check(Preco > 0);
+
+--adiciona valor padrão quando omite valor da coluna DataValidade na inserção 
+--alter table Produtos
+--add default GETDATE() FOR DataValidade
